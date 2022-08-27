@@ -1,10 +1,11 @@
 import React from "react";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-red-800 text-4xl font-bold">News app</h1>
-    </div>
+    <>
+      <Home />
+    </>
   );
 };
 
