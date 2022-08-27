@@ -1,7 +1,10 @@
 import React from "react";
 import newsPaperOverlay from "../../assets/newspaper-overlay-2.jpg";
 
-const Overlay = () => {
+const Overlay = ({ categorias, setCategorias }) => {
+  const handleInputChange = ({ target }) => {
+    setCategorias(target.value);
+  };
   return (
     <div className="w-full h-screen relative">
       <img
@@ -21,10 +24,9 @@ const Overlay = () => {
           <div>
             <select
               className="w-[250px] md:w-[300px] p-1 md:p-2 rounded-lg bg-indigo-100"
-              name=""
               id="categorias"
-              //   value=""
-              //   onChange={}
+              value={categorias}
+              onChange={handleInputChange}
             >
               <option value="general">general</option>
               <option value="business">business</option>
