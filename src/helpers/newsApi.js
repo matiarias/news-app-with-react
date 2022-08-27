@@ -6,6 +6,6 @@ export const newsApi = async (category) => {
     const { articles } = await resp.json();
     return articles;
   } catch (error) {
-    console.error(error);
+    console.log(error);
   }
 };

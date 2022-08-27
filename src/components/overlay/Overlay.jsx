@@ -20,7 +20,7 @@ const Overlay = () => {
         <form>
           <div>
             <select
-              className="w-[250px] md:w-[300px] p-1 md:p-2 rounded-lg"
+              className="w-[250px] md:w-[300px] p-1 md:p-2 rounded-lg bg-indigo-100"
               name=""
               id="categorias"
               //   value=""
