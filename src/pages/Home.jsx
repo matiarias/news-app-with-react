@@ -36,20 +36,18 @@ const Home = () => {
             noticias.datos.map((item, index) => (
               <div
                 key={index}
-                className="relative bg-gray-200 h-[400px] w-full sm:h-[450px] lg:h-[400px] lg:max-w-[350px] rounded-md border-2 border-sky-200 border-r-sky-900 place-self-center"
+                className="relative bg-[#bfdda8] h-[400px] w-full sm:h-[450px] lg:h-[400px] lg:max-w-[350px] rounded-lg border-2 border-[#5e7a5e] shadow-lg shadow-[#82a882] place-self-center"
               >
                 <img
                   className="w-full h-[200px] object-cover"
                   src={item.urlToImage}
                   alt={item.title}
                 />
-                <div className="px-2 py-4">
-                  <h3 className="text-black font-medium text-lg">
-                    {item.title}
-                  </h3>
-                </div>
+                <h3 className="text-black font-bold text-md p-2">
+                  {item.title}
+                </h3>
                 <a
-                  className="absolute bottom-2 rounded-md bg-slate-300"
+                  className="absolute bottom-2 left-1/4 w-[50%] py-1 rounded-lg shadow-lg shadow-green-900 text-center text-white text-md lg:text-lg bg-gradient-to-r from-green-900 to-lime-600 hover:from-amber-700 hover:to-emerald-600"
                   href={item.url}
                   target="_blank"
                 >
