@@ -5,7 +5,13 @@ import loadingLottie from "../../assets/lotties/loadingLottie.json";
 const Loading = () => {
   return (
     <div>
-      <Lottie animationData={loadingLottie} />
+      <Lottie
+        animationData={loadingLottie}
+        style={{
+          width: "300px",
+          height: "300px",
+        }}
+      />
     </div>
   );
 };
