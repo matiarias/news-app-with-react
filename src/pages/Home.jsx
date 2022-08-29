@@ -3,6 +3,7 @@ import { newsApi } from "../helpers/newsApi";
 
 import NavBar from "../components/navbar/NavBar";
 import Overlay from "../components/overlay/Overlay";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
   const [noticias, setNoticias] = useState({
@@ -78,7 +79,9 @@ const Home = () => {
           )}
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
