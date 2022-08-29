@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/footer/Footer";
 import NavBar from "../components/navbar/NavBar";
-import matiImg from "../assets/mati.jpg";
+import matiImg from "../assets/mati2.jpg";
 import Lottie from "lottie-react";
 import personLottie from "../assets/lotties/personLottie.json";
 
