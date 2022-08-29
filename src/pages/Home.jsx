@@ -60,14 +60,14 @@ const Home = () => {
                 <div className="font-medium text-center bg-gradient-to-r from-green-800 to-green-300">
                   <span className="text-white">{item.source.name}</span>
                 </div>
-                <h3 className="text-black font-bold text-lg md:text-md p-2">
+                <h3 className="text-black font-bold text-lg md:text-md lg:text-xl p-2">
                   {item.title}
                 </h3>
                 <p className="text-black font-light px-2 py-1 text-sm md:text-md">
                   {item.description}
                 </p>
                 <a
-                  className="absolute bottom-2 left-1/4 w-[50%] py-1 rounded-lg shadow-lg shadow-green-900 text-center text-white text-md lg:text-lg bg-gradient-to-r from-green-900 to-lime-600 hover:from-amber-800 hover:to-sky-900"
+                  className="absolute bottom-6 left-1/4 w-[50%] py-1 rounded-lg shadow-lg shadow-green-900 text-center text-white text-md lg:text-lg bg-gradient-to-r from-green-900 to-lime-600 hover:from-amber-800 hover:to-sky-900"
                   href={item.source.url}
                   target="_blank"
                 >

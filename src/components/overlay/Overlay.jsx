@@ -32,14 +32,14 @@ const Overlay = ({ categorias, setCategorias, pais, setPais }) => {
               value={categorias}
               onChange={handleInputCategoria}
             >
-              <option value="breaking-news">breaking-news</option>
-              <option value="world">world</option>
-              <option value="business">business</option>
-              <option value="entertainment">entertainment </option>
-              <option value="health">health</option>
-              <option value="science">science</option>
-              <option value="sports">sports</option>
-              <option value="technology">technolody</option>
+              <option value="breaking-news">Ultimo Momento</option>
+              <option value="world">Mundo</option>
+              <option value="business">Negocios</option>
+              <option value="entertainment">Entretenimiento</option>
+              <option value="health">Salud</option>
+              <option value="science">Ciencia</option>
+              <option value="sports">Deportes</option>
+              <option value="technology">Tecnologia</option>
             </select>
 
             <select
@@ -48,12 +48,12 @@ const Overlay = ({ categorias, setCategorias, pais, setPais }) => {
               value={pais}
               onChange={handleInputPais}
             >
-              <option value="us">United States</option>
+              <option value="us">Estados Unidos</option>
               <option value="pe">Peru</option>
-              <option value="nl">Netherlands</option>
-              <option value="gb">United Kingdom</option>
-              <option value="fr">France</option>
-              <option value="it">Italy</option>
+              <option value="nl">Paises Bajos</option>
+              <option value="gb">Reino Unido</option>
+              <option value="fr">Francia</option>
+              <option value="it">Italia</option>
             </select>
           </div>
         </form>
