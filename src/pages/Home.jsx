@@ -4,6 +4,7 @@ import { newsApi } from "../helpers/newsApi";
 import NavBar from "../components/navbar/NavBar";
 import Overlay from "../components/overlay/Overlay";
 import Footer from "../components/footer/Footer";
+import Loading from "../components/loading/Loading";
 
 const Home = () => {
   const [noticias, setNoticias] = useState({
@@ -46,7 +47,9 @@ const Home = () => {
       <main>
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 px-5 py-10">
           {noticias.loading ? (
-            <h3 className="text-black text-center text-3xl">Cargando.....</h3>
+            <div className="w-full h-[500px] flex justify-center items-center">
+              <Loading />
+            </div>
           ) : (
             noticias.datos.map((item, index) => (
               <div
