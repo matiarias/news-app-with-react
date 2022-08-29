@@ -1,7 +1,8 @@
-export const newsApi = async (category) => {
+export const newsApi = async (category, country) => {
   try {
     const resp = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=ar&category=${category}&apiKey=d29f8cdd6aeb4282a787fbcc94fdc480`
+      `https://gnews.io/api/v4/top-headlines?token=e40075e34d9b87c73599adec2800be27&topic=${category}&country=${country}
+      `
     );
     const { articles } = await resp.json();
     return articles;
