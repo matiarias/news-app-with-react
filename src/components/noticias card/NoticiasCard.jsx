@@ -22,7 +22,7 @@ const NoticiasCard = ({ item, index }) => {
       </p>
       <a
         className="absolute bottom-6 left-1/4 w-[50%] py-1 rounded-lg shadow-lg shadow-green-900 text-center text-white text-md lg:text-lg bg-gradient-to-r from-green-900 to-lime-600 hover:from-amber-800 hover:to-sky-900"
-        href={item.source.url}
+        href={item.url}
         target="_blank"
       >
         Ir a la Noticia

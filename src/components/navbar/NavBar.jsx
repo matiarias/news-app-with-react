@@ -46,7 +46,7 @@ const NavBar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-[50%] bg-gradient-to-r from-[#884909] to-[#335343] flex flex-col justify-center items-center gap-8"
+            : "absolute top-0 left-0 w-full h-[50%] bg-gradient-to-r from-[#884909] to-[#335343] flex flex-col justify-center items-center gap-8 z-10"
         }
       >
         <Link to="/">
