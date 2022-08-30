@@ -46,16 +46,16 @@ const NavBar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-[50%] bg-gradient-to-r from-[#884909] to-[#335343] flex flex-col justify-center items-center gap-8 z-10"
+            : "absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-[#884909] to-[rgba(51,83,67,0.9)] flex flex-col justify-center items-center gap-8 z-10"
         }
       >
         <Link to="/">
-          <li className="text-white text-2xl font-medium hover:text-yellow-400 lg:hover:scale-110">
+          <li className="text-white text-3xl font-medium hover:text-yellow-400 lg:hover:scale-110">
             Inicio
           </li>
         </Link>
         <Link to="/about">
-          <li className="text-white text-2xl font-medium hover:text-yellow-400 lg:hover:scale-110">
+          <li className="text-white text-3xl font-medium hover:text-yellow-400 lg:hover:scale-110">
             Sobre Nosotros
           </li>
         </Link>
